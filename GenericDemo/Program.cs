@@ -12,6 +12,9 @@ namespace GenericDemo
             generic.ToPrintArray(intArr);
             generic.ToPrintArray(doubleArr);
             generic.ToPrintArray(charArr);
+            generic.ToPrintArray<int>(intArr);
+            generic.ToPrintArray<double>(doubleArr);
+            generic.ToPrintArray<char>(charArr);
         }
     }
 }

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace GenericDemo
 {
     public class GenericOperation
-    {
-        public void ToPrintArray(int[] intArr)
+    {      
+       public void ToPrintArray(int[] intArr)
         {
-            foreach (var data in intArr)
+            foreach(var data in intArr)
             {
                 Console.WriteLine(data);
             }
@@ -29,5 +29,12 @@ namespace GenericDemo
                 Console.WriteLine(data);
             }
         }
-    }
+      public void ToPrintArray<T>(T[] Array)
+      {
+          foreach(var data in Array)
+            {
+                Console.WriteLine(data);
+            }
+      }
+    }
 }
